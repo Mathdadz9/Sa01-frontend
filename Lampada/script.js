@@ -54,7 +54,7 @@ function quebrarLampada() {
 
 // Função para trocar a lâmpada e voltar ao tema claro
 function trocarLampada() {
-  lampada.src = 'lampada-apagada.png';
+  lampada.src = 'lampada-acesa.png';
   // Remover o tema escuro e azul escuro ao trocar a lâmpada
   body.classList.remove('dark-mode');
   body.classList.remove('blue-dark-mode');
