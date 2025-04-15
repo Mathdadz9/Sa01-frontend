@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer">
+            <span id="time" class="time">00:00:00.000</span>
+        </div>
+        <div class="controls">
+            <button id="start" class="btn">Iniciar</button>
+            <button id="stop" class="btn" disabled>Pausar</button>
+            <button id="reset" class="btn">Resetar</button>
+        </div>
+        <div class="settings">
+            <input id="hours" type="number" min="0" placeholder="HH" />
+            <input id="minutes" type="number" min="0" placeholder="MM" />
+            <input id="seconds" type="number" min="0" placeholder="SS" />
+            <button id="setTime" class="btn">Definir Tempo</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

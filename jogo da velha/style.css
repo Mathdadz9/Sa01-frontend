@@ -24,6 +24,28 @@
     text-shadow: 2px 2px #000;
   }
   
+  #placar {
+    background: rgba(0, 255, 231, 0.3);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 255, 231, 0.2);
+    width: 200px;
+  }
+  
+  #placar p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 5px 0;
+    font-weight: bold;
+  }
+  
+  #placar p span {
+    font-size: 1.5rem;
+    color: #00ffe7;
+  }
+  
   #tabuleiro {
     display: grid;
     grid-template-columns: repeat(3, 100px);
@@ -75,4 +97,40 @@
     background: #00e6cf;
     transform: scale(1.05);
   }
+  
+  /* Estilo para a seleção de dificuldade */
+#dificuldade {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  #dificuldade select {
+    padding: 5px;
+    background-color: #121220;
+    color: #fff;
+    border: 2px solid #00ffe7;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+/* Estilo para a seleção de dificuldade */
+#dificuldade {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  #dificuldade select {
+    padding: 5px;
+    background-color: #121220;
+    color: #fff;
+    border: 2px solid #00ffe7;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para o tabuleiro e as células, já configurados anteriormente */
+    
   
