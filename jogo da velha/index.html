@@ -8,6 +8,22 @@
 <body>
   <h1>Jogo da Velha ❌⭕</h1>
 
+  <!-- Seletor de dificuldade -->
+  <div id="dificuldade">
+    <label for="dificuldadeSelect">Escolha a Dificuldade:</label>
+    <select id="dificuldadeSelect">
+      <option value="facil">Fácil</option>
+      <option value="medio">Médio</option>
+      <option value="dificil">Difícil</option>
+    </select>
+  </div>
+
+  <!-- Placar -->
+  <div id="placar">
+    <p>Jogador X: <span id="placarX">0</span></p>
+    <p>Máquina O: <span id="placarO">0</span></p>
+  </div>
+
   <div id="tabuleiro">
     <div class="celula" data-index="0"></div>
     <div class="celula" data-index="1"></div>
@@ -15,7 +31,7 @@
     <div class="celula" data-index="3"></div>
     <div class="celula" data-index="4"></div>
     <div class="celula" data-index="5"></div>
-    <div class="celula" data-index="6"></div>
+    <div class="celula" data-index="6"></div>  
     <div class="celula" data-index="7"></div>
     <div class="celula" data-index="8"></div>
   </div>

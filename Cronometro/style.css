@@ -1,0 +1,167 @@
+/* Resetando margens e padding para evitar interferência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo o fundo e fonte global */
+body {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    background-size: 400% 400%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+/* Animação do fundo (gradiente) */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Estilo do contêiner */
+.container {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    max-width: 500px;
+    width: 500%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do cronômetro */
+.timer {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    width: fit-content;
+  
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Efeito de brilho */
+.timer.bright {
+    animation: brightEffect 1s infinite alternate;
+}
+
+@keyframes brightEffect {
+    0% {
+        box-shadow: 0 0 20px rgba(255, 165, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(255, 165, 0, 1);
+    }
+}
+
+/* Estilo dos botões */
+.btn {
+    background-color: #ff6f61;
+    border: none;
+    padding: 20px 40px;
+    font-size: 1.6rem;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    width: 150px;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #ff4b39;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.7);
+}
+
+.btn:disabled {
+    background-color: #777;
+    cursor: not-allowed;
+}
+
+/* Estilo para a área de configuração de tempo */
+.settings {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 12px;
+    font-size: 1.4rem;
+    width: 70px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #ff6f61;
+    background-color: transparent;
+    color: white;
+    margin: 0 5px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #fdbb2d;
+    transform: scale(1.05);
+}
+
+/* Estilo do botão para definir tempo */
+button#setTime {
+    background-color: #fdbb2d;
+    color: #333;
+    width: 160px;
+    font-size: 1.4rem;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button#setTime:hover {
+    background-color: #e6a800;
+    transform: scale(1.05);
+}
+
+/* Estilo dos inputs em dispositivos móveis */
+@media (max-width: 600px) {
+    .timer {
+        font-size: 4rem;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+        width: 120px;
+    }
+
+    input {
+        font-size: 1.2rem;
+        width: 50px;
+    }
+
+    button#setTime {
+        font-size: 1.2rem;
+        width: 140px;
+    }
+}
